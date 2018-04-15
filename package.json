@@ -1,0 +1,21 @@
+{
+  "name": "nextjs-static-export",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MegaBlackLabel/nextjs-static-export.git",
+  "author": "底なし沼の魔女 <megablacklabel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out"
+  },
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "serve": "^6.5.5"
+  }
+}
